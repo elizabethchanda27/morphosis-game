@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Menu from "@/components/Menu";
+import Instructions from "@/components/Instructions";
 
 const GameContainer = styled.div`
   width: 100vw;
@@ -45,33 +46,7 @@ export default function Home() {
       case "game":
         return <div>Game content will go here</div>;
       case "instructions":
-        return (
-          <div
-            style={{
-              color: "#fff",
-              padding: "2rem",
-              fontFamily: "'Press Start 2P', cursive",
-            }}
-          >
-            <h2>HOW TO PLAY</h2>
-            <p>Instructions will go here...</p>
-            <button
-              onClick={() => setGameState("menu")}
-              style={{
-                fontFamily: "'Press Start 2P', cursive",
-                padding: "1rem",
-                marginTop: "2rem",
-                cursor: "pointer",
-                backgroundColor: "#4a4a4a",
-                color: "white",
-                border: "none",
-                position: "relative",
-              }}
-            >
-              BACK TO MENU
-            </button>
-          </div>
-        );
+        return <Instructions onBack={() => setGameState("menu")} />;
       default:
         return null;
     }
