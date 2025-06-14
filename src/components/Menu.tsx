@@ -114,9 +114,10 @@ const ButtonContainer = styled.div`
 
 interface MenuProps {
   onStart: () => void;
+  onInstructions?: () => void;
 }
 
-export default function Menu({ onStart }: MenuProps) {
+export default function Menu({ onStart, onInstructions }: MenuProps) {
   const [showInstructions, setShowInstructions] = useState(false);
   const [showGame, setShowGame] = useState(false);
   const [showLevel2, setShowLevel2] = useState(false);
@@ -180,7 +181,7 @@ export default function Menu({ onStart }: MenuProps) {
         <Button onClick={handleStart} $color="#B5C78E">
           START GAME
         </Button>
-        <Button onClick={handleInstructions} $color="#F7F0B3">
+        <Button onClick={onInstructions || handleInstructions} $color="#F7F0B3">
           INSTRUCTIONS
         </Button>
       </ButtonContainer>
