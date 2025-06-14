@@ -3,7 +3,7 @@ import styled, { keyframes, css } from "styled-components";
 
 const eggs = [
   {
-    egg: "/images/blueegg.PNG",
+    egg: "/images/blueegg.png",
     buttonColor: "#4A90E2",
     creature: "/images/otter.PNG",
     bg: "#4A90E2",
@@ -12,7 +12,7 @@ const eggs = [
       "You received Rilo the Otter, a creature of fluid identity, playfulness, and connection. Otters teach us to embrace exploration, non-linear growth, and queer joy. Rilo celebrates how you've accepted change, embraced your evolving identity, and found connection in unexpected places.",
   },
   {
-    egg: "/images/greenegg.PNG",
+    egg: "/images/greenegg.png",
     buttonColor: "#7ED957",
     creature: "/images/dragon.PNG",
     bg: "#7ED957",
@@ -21,7 +21,7 @@ const eggs = [
       "You received Kaia the Dragon, a representation of sexual health knowledge, body confidence, and protective wisdom. Dragons in mythology are fierce guardians, and Kaia protects your right to know your body and take control of your health. You've mastered physical obstacles and embraced bodily autonomy.",
   },
   {
-    egg: "/images/yellowegg.PNG",
+    egg: "/images/yellowegg.png",
     buttonColor: "#FFE066",
     creature: "/images/mooncat.PNG",
     bg: "#FFE066",

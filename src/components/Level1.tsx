@@ -458,7 +458,7 @@ const Level1: React.FC<Level1Props> = ({ onLevelComplete }) => {
         <Score>Score: {score}/80</Score>
         <Player style={{ left: `${playerPos.x}px`, top: `${playerPos.y}px` }}>
           <AstronautImg
-            src="/images/astronauts.PNG"
+            src="/images/astronauts.png"
             alt="Astronaut"
             onError={(e) => {
               e.currentTarget.style.border = "2px solid red";
