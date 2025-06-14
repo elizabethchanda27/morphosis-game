@@ -478,13 +478,7 @@ const Level1: React.FC<Level1Props> = ({ onLevelComplete }) => {
           </Rocket>
         ))}
         {lasers.map((laser, index) => (
-          <Laser
-            key={index}
-            style={{
-              left: `${laser.position.x}px`,
-              top: `${laser.position.y}px`,
-            }}
-          />
+          <Laser key={index} $x={laser.position.x} $y={laser.position.y} />
         ))}
         <Monster $x={monsterPos.x} $y={monsterPos.y} />
       </GameArea>
